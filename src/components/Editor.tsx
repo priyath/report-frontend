@@ -4,30 +4,7 @@ import { CKEditor } from '@ckeditor/ckeditor5-react';
 
 // use from source
 import DecoupledEditor from '@ckeditor/ckeditor5-editor-decoupled/src/decouplededitor';
-import Bold from '@ckeditor/ckeditor5-basic-styles/src/bold';
-import Italic from '@ckeditor/ckeditor5-basic-styles/src/italic';
-import Paragraph from '@ckeditor/ckeditor5-paragraph/src/paragraph';
-import PageBreak from '@ckeditor/ckeditor5-page-break/src/pagebreak';
-import Pagination from '@ckeditor/ckeditor5-pagination/src/pagination';
-import Essentials from '@ckeditor/ckeditor5-essentials/src/essentials';
-
-const editorConfiguration = {
-    plugins: [ Essentials, Bold, Italic, Paragraph, PageBreak, Pagination ],
-    toolbar: [ 'bold', 'italic', 'pagebreak', 'previouspage', 'nextpage', 'pageNavigation' , '|'],
-    pagination: {
-        // A4
-        pageWidth: '21cm',
-        pageHeight: '29.7cm',
-
-        pageMargins: {
-            top: '20mm',
-            bottom: '20mm',
-            right: '12mm',
-            left: '12mm'
-        }
-    },
-    licenseKey: ''
-};
+import {editorConfiguration} from "./editor.config";
 
 class Editor extends Component {
 
@@ -36,10 +13,8 @@ class Editor extends Component {
         this.state = {
             currentPage: 1,
             totalPages: 0,
-
         }
     }
-
 
     render() {
         return (
@@ -53,18 +28,12 @@ class Editor extends Component {
                             onReady={ (editor: any) => {
                                 console.log( 'Editor is ready to use!', editor );
 
-
                                 (window as any).editor = editor;
 
-                                // Add these two lines to properly position the toolbar
+                                // properly position the toolbar
                                 const toolbarContainer = document.querySelector( '.document-editor__toolbar' );
                                 toolbarContainer!.appendChild( editor.ui.view.toolbar.element );
 
-                                // // Insert the toolbar before the editable area.
-                                // editor.ui.getEditableElement().parentElement.insertBefore(
-                                //     editor.ui.view.toolbar.element,
-                                //     editor.ui.getEditableElement()
-                                // );
                             } }
                             onError={ ( { willEditorRestart }: {willEditorRestart: any} ) => {
                                 // If the editor is restarted, the toolbar element will be created once again.
