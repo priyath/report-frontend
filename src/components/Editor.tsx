@@ -1,19 +1,20 @@
-import React, { Component } from 'react';
+import React, {Component} from 'react';
 
 import { CKEditor } from '@ckeditor/ckeditor5-react';
 
 // use from source
 import DecoupledEditor from '@ckeditor/ckeditor5-editor-decoupled/src/decouplededitor';
 import {editorConfiguration} from "./editor.config";
+import {EditorProps, EditorState, Props} from "./EditorContainer";
 
-class Editor extends Component {
+class Editor extends Component<Props, EditorState> {
 
     constructor(props: any) {
         super(props);
         this.state = {
             currentPage: 1,
             totalPages: 0,
-        }
+        };
     }
 
     render() {
