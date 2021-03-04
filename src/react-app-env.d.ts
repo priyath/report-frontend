@@ -69,3 +69,12 @@ declare module '*.module.sass' {
   const classes: { readonly [key: string]: string };
   export default classes;
 }
+
+declare module '@ckeditor/ckeditor5-react';
+declare module '@ckeditor/ckeditor5-editor-decoupled/src/decouplededitor';
+declare module '@ckeditor/ckeditor5-basic-styles/src/bold';
+declare module '@ckeditor/ckeditor5-basic-styles/src/italic';
+declare module '@ckeditor/ckeditor5-paragraph/src/paragraph';
+declare module '@ckeditor/ckeditor5-page-break/src/pagebreak';
+declare module '@ckeditor/ckeditor5-pagination/src/pagination';
+declare module '@ckeditor/ckeditor5-essentials/src/essentials';
