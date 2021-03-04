@@ -1,3 +1,7 @@
+/**
+ * Container linking editor view to redux store
+ */
+
 import {connect} from "react-redux";
 import Editor from "./Editor";
 import {AppActions, DataSourceState} from "../state/types";

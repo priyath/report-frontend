@@ -1,3 +1,6 @@
+/**
+ * Types for data source module
+ */
 export interface DataSourceState {
     tracts: {}
 }

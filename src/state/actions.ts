@@ -3,6 +3,9 @@ import { DataSourceState, LOAD_DATA_SOURCE, DataSourceActionTypes} from "./types
 // import {AppState} from "./configureStore";
 import jsonData from '../data/data.json';
 
+/**
+ * Actions for data source
+ */
 export const loadDataSource = (): DataSourceActionTypes => {
   return {
       type: LOAD_DATA_SOURCE,
