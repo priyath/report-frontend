@@ -2,8 +2,6 @@ import Essentials from "@ckeditor/ckeditor5-essentials/src/essentials";
 import Bold from "@ckeditor/ckeditor5-basic-styles/src/bold";
 import Italic from "@ckeditor/ckeditor5-basic-styles/src/italic";
 import Underline from "@ckeditor/ckeditor5-basic-styles/src/underline";
-import Image from "@ckeditor/ckeditor5-image/src/image";
-import ImageInsert from "@ckeditor/ckeditor5-image/src/imageinsert";
 import Strikethrough from "@ckeditor/ckeditor5-basic-styles/src/strikethrough";
 import Paragraph from "@ckeditor/ckeditor5-paragraph/src/paragraph";
 import Pagination from "@ckeditor/ckeditor5-pagination/src/pagination";
@@ -20,7 +18,7 @@ import Placeholder from '../plugins/placeholder/placeholderediting';
 
 export const editorConfiguration = {
     plugins: [Essentials, Bold, Italic, Paragraph, Pagination, PageBreak, Table, TableToolbar, TableProperties,
-        TableCellProperties, Heading, Font, List, Placeholder, Underline, Strikethrough, Image, ImageInsert],
+        TableCellProperties, Heading, Font, List, Placeholder, Underline, Strikethrough],
     toolbar: {
         items: [
             'heading', '|',
