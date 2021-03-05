@@ -12,9 +12,11 @@ import Heading from "@ckeditor/ckeditor5-heading/src/heading";
 import Font from "@ckeditor/ckeditor5-font/src/font";
 import List from "@ckeditor/ckeditor5-list/src/list";
 
+import Placeholder from '../plugins/placeholder/placeholderediting';
+
 export const editorConfiguration = {
     plugins: [Essentials, Bold, Italic, Paragraph, Pagination, PageBreak, Table, TableToolbar, TableProperties,
-        TableCellProperties, Heading, Font, List],
+        TableCellProperties, Heading, Font, List, Placeholder],
     toolbar: {
         items: [
             'heading', '|',
@@ -29,7 +31,8 @@ export const editorConfiguration = {
             'insertTable', '|',
             'uploadImage', 'blockQuote', '|',
             'undo', 'redo', '|',
-            'pagebreak', 'previouspage', 'nextpage', 'pagenavigation'
+            'pagebreak', 'previouspage', 'nextpage', 'pagenavigation', '|',
+            'placeholder'
         ],
     },
     table: {

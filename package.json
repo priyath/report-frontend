@@ -5,6 +5,7 @@
   "dependencies": {
     "@babel/core": "7.12.3",
     "@ckeditor/ckeditor5-basic-styles": "^26.0.0",
+    "@ckeditor/ckeditor5-core": "latest",
     "@ckeditor/ckeditor5-dev-utils": "^24.3.0",
     "@ckeditor/ckeditor5-editor-decoupled": "^26.0.0",
     "@ckeditor/ckeditor5-essentials": "^26.0.0",
@@ -14,6 +15,7 @@
     "@ckeditor/ckeditor5-paragraph": "^26.0.0",
     "@ckeditor/ckeditor5-react": "^3.0.1",
     "@ckeditor/ckeditor5-theme-lark": "^26.0.0",
+    "@ckeditor/ckeditor5-widget": "latest",
     "@pmmmwh/react-refresh-webpack-plugin": "0.4.3",
     "@reduxjs/toolkit": "^1.5.0",
     "@svgr/webpack": "5.5.0",
@@ -72,6 +74,7 @@
     "react-app-polyfill": "^2.0.0",
     "react-dev-utils": "^11.0.3",
     "react-dom": "^17.0.1",
+    "react-json-view": "^1.21.1",
     "react-redux": "^7.2.2",
     "react-refresh": "^0.8.3",
     "redux": "^4.0.5",

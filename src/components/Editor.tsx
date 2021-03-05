@@ -5,7 +5,8 @@ import { CKEditor } from '@ckeditor/ckeditor5-react';
 // use from source
 import DecoupledEditor from '@ckeditor/ckeditor5-editor-decoupled/src/decouplededitor';
 import {editorConfiguration} from "./editor.config";
-import {EditorProps, EditorState, Props} from "./EditorContainer";
+import {EditorState, Props} from "./EditorContainer";
+import ReactJson from "react-json-view";
 
 class Editor extends Component<Props, EditorState> {
 
@@ -20,9 +21,9 @@ class Editor extends Component<Props, EditorState> {
     render() {
         return (
             <div className="App">
-                <h2>CKEditor 5 using a custom build - decoupled editor</h2>
 
                 <div className="document-editor">
+                    <h2>CKEditor 5 using a custom build - decoupled editor</h2>
                     <div className="document-editor__toolbar"></div>
                     <div className="document-editor__editable-container">
                         <CKEditor
@@ -55,6 +56,10 @@ class Editor extends Component<Props, EditorState> {
                         />
                     </div>
                 </div>
+                <ReactJson src={this.props.dataSource} onSelect={(select) => {
+                    (window as any).editor.execute( 'placeholder', { value: select.value} );
+                    (window as any).editor.editing.view.focus();
+                }}/>
             </div>
         );
     }
