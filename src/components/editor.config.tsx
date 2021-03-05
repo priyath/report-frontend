@@ -1,6 +1,10 @@
 import Essentials from "@ckeditor/ckeditor5-essentials/src/essentials";
 import Bold from "@ckeditor/ckeditor5-basic-styles/src/bold";
 import Italic from "@ckeditor/ckeditor5-basic-styles/src/italic";
+import Underline from "@ckeditor/ckeditor5-basic-styles/src/underline";
+import Image from "@ckeditor/ckeditor5-image/src/image";
+import ImageInsert from "@ckeditor/ckeditor5-image/src/imageinsert";
+import Strikethrough from "@ckeditor/ckeditor5-basic-styles/src/strikethrough";
 import Paragraph from "@ckeditor/ckeditor5-paragraph/src/paragraph";
 import Pagination from "@ckeditor/ckeditor5-pagination/src/pagination";
 import PageBreak from "@ckeditor/ckeditor5-page-break/src/pagebreak";
@@ -16,20 +20,18 @@ import Placeholder from '../plugins/placeholder/placeholderediting';
 
 export const editorConfiguration = {
     plugins: [Essentials, Bold, Italic, Paragraph, Pagination, PageBreak, Table, TableToolbar, TableProperties,
-        TableCellProperties, Heading, Font, List, Placeholder],
+        TableCellProperties, Heading, Font, List, Placeholder, Underline, Strikethrough, Image, ImageInsert],
     toolbar: {
         items: [
             'heading', '|',
-            'fontfamily', 'fontsize', '|',
-            'alignment', '|',
-            'fontColor', 'fontBackgroundColor', '|',
+            'fontfamily', 'fontsize', 'fontColor', 'fontBackgroundColor', '|',
             'bold', 'italic', 'strikethrough', 'underline', 'subscript', 'superscript', '|',
             'link', '|',
             'outdent', 'indent', '|',
-            'bulletedList', 'numberedList', 'todoList', '|',
+            'alignment', 'bulletedList', 'numberedList', 'todoList', '|',
             'code', 'codeBlock', '|',
             'insertTable', '|',
-            'uploadImage', 'blockQuote', '|',
+            'uploadImage', 'insertimage', 'image', 'blockQuote', '|',
             'undo', 'redo', '|',
             'pagebreak', 'previouspage', 'nextpage', 'pagenavigation', '|',
             'placeholder'

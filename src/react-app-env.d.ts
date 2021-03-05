@@ -86,3 +86,7 @@ declare module '@ckeditor/ckeditor5-heading/src/heading';
 declare module '@ckeditor/ckeditor5-font/src/font';
 declare module '@ckeditor/ckeditor5-list/src/list';
 declare module '@ckeditor/ckeditor5-export-pdf/src/exportpdf';
+declare module '@ckeditor/ckeditor5-basic-styles/src/underline';
+declare module '@ckeditor/ckeditor5-basic-styles/src/strikethrough';
+declare module '@ckeditor/ckeditor5-image/src/image';
+declare module '@ckeditor/ckeditor5-image/src/imageinsert';

@@ -10,6 +10,7 @@
     "@ckeditor/ckeditor5-editor-decoupled": "^26.0.0",
     "@ckeditor/ckeditor5-essentials": "^26.0.0",
     "@ckeditor/ckeditor5-export-pdf": "^26.0.0",
+    "@ckeditor/ckeditor5-image": "^26.0.0",
     "@ckeditor/ckeditor5-page-break": "^26.0.0",
     "@ckeditor/ckeditor5-pagination": "^26.0.0",
     "@ckeditor/ckeditor5-paragraph": "^26.0.0",
