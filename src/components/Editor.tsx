@@ -59,6 +59,7 @@ class Editor extends Component<Props, EditorState> {
                     </div>
                     <div>
                         <h2>Tract Information</h2>
+                        <p>Click on an attribute value to add it to the editor!</p>
                         <ReactJson src={this.props.dataSource} onSelect={(select) => {
                             (window as any).editor.execute( 'placeholder', { value: select.value} );
                             (window as any).editor.editing.view.focus();
