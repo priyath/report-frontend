@@ -6,8 +6,6 @@ export const dataSourceReducer = (state = initialState, action: DataSourceAction
 
     switch (action.type) {
         case LOAD_DATA_SOURCE:
-            console.log('***************************');
-            console.log(action.payload);
             return action.payload;
         default:
             return state;
