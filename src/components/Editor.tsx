@@ -24,7 +24,7 @@ class Editor extends Component<Props, EditorState> {
 
                 <div className="main-container">
                     <div className="document-editor">
-                        <h2>CKEditor 5 using a custom build - decoupled editor</h2>
+                        <h2>Report Creator Tool</h2>
                         <div className="document-editor__toolbar"></div>
                         <div className="document-editor__editable-container">
                             <CKEditor
