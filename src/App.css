@@ -37,16 +37,27 @@
   }
 }
 
+.main-container {
+  display: flex;
+  flex-direction: row;
+}
+
 .document-editor {
   border: 1px solid var(--ck-color-base-border);
   border-radius: var(--ck-border-radius);
 
   /* Set vertical boundaries for the document editor. */
-  max-height: 700px;
+  max-height: 100vh;
 
   /* This element is a flex container for easier rendering. */
   display: flex;
   flex-flow: column nowrap;
+  width: 70%;
+}
+
+.react-json-view {
+  height: 100vh;
+  overflow: auto;
 }
 
 .document-editor__toolbar {
